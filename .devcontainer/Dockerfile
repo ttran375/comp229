@@ -8,11 +8,7 @@ RUN . /etc/os-release \
     && apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y mongodb-mongosh \
     && if [ "$(dpkg --print-architecture)" = "amd64" ]; then apt-get install -y mongodb-database-tools; fi \
-    && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
-    && wget -qO - https://www.mongodb.org/static/pgp/server-3.0.asc | sudo apt-key add - \
-    && echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list \
-    && sudo apt-get update \
-    && sudo apt-get install -y mongodb-org
+    && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
