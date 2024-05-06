@@ -5,20 +5,18 @@
 		"ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {},
 		"ghcr.io/devcontainers-contrib/features/mongodb-atlas-cli-homebrew:1": {}
 	},
-	{
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "vsls-contrib.gitdoc",
-		"GitHub.github-vscode-theme",
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint",
-		"ritwickdey.LiveServer",
-		"stylelint.vscode-stylelint"
-      ]
-    }
-  }
-};
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vsls-contrib.gitdoc",
+				"GitHub.github-vscode-theme",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"ritwickdey.LiveServer",
+				"stylelint.vscode-stylelint"
+			]
+		}
+	},
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", // Set Terminal Prompt to $
 	"postAttachCommand": "git pull --all",
 	"portsAttributes": {
@@ -26,7 +24,5 @@
 			"label": "Vite port"
 		}
 	},
-	"forwardPorts": [
-		5173
-	]
+	"forwardPorts": [5173]
 }
