@@ -17,15 +17,5 @@
 				"stylelint.vscode-stylelint"
 			]
 		}
-	},
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
-	"postAttachCommand": "git pull --all",
-	"portsAttributes": {
-		"5173": {
-			"label": "Vite port"
-		}
-	},
-	"forwardPorts": [
-		5173
-	]
+	}
 }
