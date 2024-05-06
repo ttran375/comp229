@@ -10,5 +10,5 @@
 			]
 		}
 	},
-	"onCreateCommand": "./install_mongod.sh"
+	"postCreateCommand": "./install_mongod.sh"
 }
