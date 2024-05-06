@@ -10,13 +10,5 @@
 			]
 		}
 	},
-	"onCreateCommand": "./install_mongod.sh", //Set Terminal Prompt to $
-	"portsAttributes": {
-		"5173": {
-			"label": "Vite port"
-		}
-	},
-	"forwardPorts": [
-		5173
-	]
+	"onCreateCommand": "./install_mongod.sh"
 }
