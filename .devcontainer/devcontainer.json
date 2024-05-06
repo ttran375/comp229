@@ -13,7 +13,7 @@
 		"ritwickdey.LiveServer",
 		"stylelint.vscode-stylelint"
 	],
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
+	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", // Set Terminal Prompt to $
 	"postAttachCommand": "git pull --all",
 	"portsAttributes": {
 		"5173": {
