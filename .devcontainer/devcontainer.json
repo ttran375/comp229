@@ -1,4 +1,6 @@
 {
+	"name": "Node.js",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {},
 		"ghcr.io/devcontainers-contrib/features/mongodb-atlas-cli-homebrew:1": {}
@@ -15,12 +17,14 @@
 			]
 		}
 	},
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", // Set Terminal Prompt to $
+	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
 	"postAttachCommand": "git pull --all",
 	"portsAttributes": {
 		"5173": {
 			"label": "Vite port"
 		}
 	},
-	"forwardPorts": [5173]
+	"forwardPorts": [
+		5173
+	]
 }
