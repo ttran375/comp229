@@ -1,5 +1,13 @@
 FROM mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye
 
+# Install MongoDB command line tools
+RUN wget -qO - https://www.mongodb.org/static/pgp/server-3.0.asc | apt-key add - \
+    && echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.0.list \
+    && apt-get update \
+    && apt-get install -y mongodb-org \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install MongoDB command line tools - though mongo-database-tools not available on arm64
 ARG MONGO_TOOLS_VERSION=6.0
 RUN . /etc/os-release \
