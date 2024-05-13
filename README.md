@@ -2,4 +2,8 @@
 
 ## Week 1
 
-- Lab: [Setting up Development Environment](https://github.com/ttran375/comp229-lab1)
+- In-Class Exercises: [Setting up Development Environment](Week01)
+
+## Week 2
+
+- In-Class Exercises: [How React Works](Week02)

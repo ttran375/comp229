@@ -1,0 +1,28 @@
+{
+  "name": "Node.js & Mongo DB",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vsls-contrib.gitdoc",
+        "mongodb.mongodb-vscode",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.LiveServer",
+        "stylelint.vscode-stylelint",
+        "sburg.vscode-javascript-booster",
+        "streetsidesoftware.code-spell-checker",
+        "xabikos.JavaScriptSnippets",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "Postman.postman-for-vscode",
+        "vinliao.fast-arrow",
+        "dsznajder.es7-react-js-snippets"
+      ]
+    }
+  }
+}
