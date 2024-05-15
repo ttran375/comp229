@@ -1,13 +1,15 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
-function IngredientsList({ items }) {
-return React.createElement(
-"ul",
-{ className: "ingredients" },
-items.map((ingredient, i) =>
-React.createElement("li", { key: i }, ingredient)
-)
-);
+import ReactDOM from 'react-dom';
+
+// This is a functional component
+const Welcome = () => {
+  return <h1>Hello World!</h1>;
 }
-export default IngredientsList;
+
+ReactDOM.render(
+  <Welcome />,  // Use <Welcome /> instead of <welcome>
+  document.getElementById("root")
+);
+
+export default Welcome;
 
