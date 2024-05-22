@@ -9,6 +9,7 @@
   "author": "Blessing",
   "license": "ISC",
   "dependencies": {
+    "connect": "^3.7.0",
     "express": "^4.19.2"
   }
 }
