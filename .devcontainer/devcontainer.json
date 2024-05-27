@@ -1,24 +1,27 @@
 {
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "vsls-contrib.gitdoc",
-        "mongodb.mongodb-vscode",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "ritwickdey.LiveServer",
-        "stylelint.vscode-stylelint",
-        "sburg.vscode-javascript-booster",
-        "streetsidesoftware.code-spell-checker",
-        "xabikos.JavaScriptSnippets",
-        "christian-kohler.npm-intellisense",
-        "christian-kohler.path-intellisense",
-        "VisualStudioExptTeam.vscodeintellicode",
-        "VisualStudioExptTeam.intellicode-api-usage-examples",
-        "Postman.postman-for-vscode",
-        "vinliao.fast-arrow",
-        "dsznajder.es7-react-js-snippets"
-      ]
-    }
-  }
+	"name": "Node.js",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vsls-contrib.gitdoc",
+				"mongodb.mongodb-vscode",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"ritwickdey.LiveServer",
+				"stylelint.vscode-stylelint",
+				"sburg.vscode-javascript-booster",
+				"streetsidesoftware.code-spell-checker",
+				"xabikos.JavaScriptSnippets",
+				"christian-kohler.npm-intellisense",
+				"christian-kohler.path-intellisense",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"Postman.postman-for-vscode",
+				"vinliao.fast-arrow",
+				"dsznajder.es7-react-js-snippets",
+				"GitHub.copilot"
+			]
+		}
+	}
 }
