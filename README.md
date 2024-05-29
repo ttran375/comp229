@@ -2,11 +2,11 @@
 
 ## Week 1
 
-- In-Class Exercises: [Setting up Development Environment](WEEK1)
+- In-Class Exercises: [Environment](WEEK1)
 
 ## Week 2
 
-- In-Class Exercises: [ReactDOM](WEEK2), [How React Works](WEEK2-2)
+- In-Class Exercises: [React via CDN](WEEK2), [How React Works](WEEK2-2)
 
 ## Week 3
 
