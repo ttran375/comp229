@@ -2,7 +2,7 @@
 
 ## Week 1
 
-- In-Class Exercises: [Environment](WEEK1)
+- In-Class Exercises: [Development Environment](WEEK1)
 
 ## Week 2
 
@@ -10,8 +10,13 @@
 
 ## Week 3
 
-- In-Class Exercises: [Node.js](week3-demos), [Express.js](WEEK4)
+- In-Class Exercises: [Node.js](week3-demos)
 
 ## Week 4
 
+- In-Class Exercises: [Express.js](WEEK4)
+
+## Week 5
+
 - In-Class Exercises: [MERN Stack](mern_Skeleton)
+- Assignment 1: Portfolio
