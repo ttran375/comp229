@@ -19,4 +19,4 @@
 ## Week 5
 
 - In-Class Exercises: [MERN Stack](mern_Skeleton)
-- Assignment 1: Portfolio
+- Assignment 1: [Portfolio](https://github.com/ttran375/comp229-assignment1)
