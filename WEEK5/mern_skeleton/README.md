@@ -193,8 +193,18 @@ yarn add global concurrently
 
 ## Running the app
 
-Add the script in the package.json file:
+Add the script in the `client` package.json file:
 
 ```json
 "dev": "concurrently 'vite' 'nodemon server.js'"
+```
+
+## Installing vite globally
+
+Run, yarn init in the root folder to create the package.json
+
+```js
+yarn init
+yarn global add vite
+yarn add concurrently --dev
 ```
