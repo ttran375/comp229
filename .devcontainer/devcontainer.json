@@ -21,7 +21,9 @@
         "VisualStudioExptTeam.intellicode-api-usage-examples",
         "Postman.postman-for-vscode",
         "vinliao.fast-arrow",
-        "dsznajder.es7-react-js-snippets"
+        "dsznajder.es7-react-js-snippets",
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint"
       ]
     }
   }
