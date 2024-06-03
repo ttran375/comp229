@@ -31,7 +31,7 @@ show collections
 
 To drop a collection:
 
-```
+```js
 db.posts.drop();
 ```
 
@@ -132,4 +132,24 @@ db.posts.updateOne(
   { $set: { title: "Second Post", user: "alice" } },
   { upsert: true }
 );
+```
+
+## Deleting documents
+
+```js
+db.posts.remove({});
+```
+
+To rebuild your collection with different indexes, it is preferred that you use the `drop()` method.
+
+## Deleting multiple documents
+
+```js
+db.posts.deleteMany({ user: "alice" });
+```
+
+## Deleting a single document
+
+```js
+db.posts.deleteOne({ user: "alice" }, true);
 ```
