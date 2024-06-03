@@ -46,3 +46,22 @@ db.posts.insert({"title":"Second Post", "user": "alice"})
 ```
 db.posts.update({"user":"alice"},{$set:{"title":"Second Post","user":"alice"}},{upsert:true})
 ```
+
+## Creating a document using insertOne() or replaceOne()
+
+```
+db.posts.insertOne({"title":"Second Post","user":"alice"})
+```
+
+## Finding all the collection documents
+
+```
+db.posts.find()
+db.posts.find({})
+```
+
+## Retrieve a specific document
+
+```
+db.posts.find({ "user": "alice" })
+```
