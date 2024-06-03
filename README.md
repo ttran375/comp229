@@ -23,4 +23,4 @@
 
 ## Week 5
 
-- In-Class Exercises: [MongoDB Shell](mongodb-shell)
+- In-Class Exercises: [MongoDB Shell](mongodb-shell), Frontend and Backend Setup
