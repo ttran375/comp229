@@ -199,8 +199,6 @@ Add the script in the `client` package.json file:
 "dev": "concurrently 'vite' 'nodemon server.js'"
 ```
 
-## Installing vite globally
-
 Run, yarn init in the root folder to create the package.json
 
 ```js
@@ -208,3 +206,60 @@ yarn init
 yarn global add vite
 yarn add concurrently --dev
 ```
+
+`package.json` in the client
+```json
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "global": "^4.4.0"
+  },
+  "scripts": {
+    "dev": "concurrently 'vite' \"nodemon server.js\"",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2"
+  },
+  "name": "mern_skeleton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Blessing",
+  "license": "MIT"
+}
+```
+
+`package.json` in the server
+```json
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "global": "^4.4.0"
+  },
+  "scripts": {
+    "dev": "concurrently 'vite' \"nodemon server.js\"",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2"
+  },
+  "name": "mern_skeleton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Blessing",
+  "license": "MIT"
+}
+```
+
+- Use this command to check if vite is installed:
+- npx vite –v
+- Then proceed to install if not already installed.
+
+Copy the public folder from the client folder and paste in
+the root folder
