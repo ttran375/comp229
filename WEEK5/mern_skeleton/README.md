@@ -55,6 +55,8 @@ export default defineConfig({
 
 ## Creating the server
 
+Navigate to the root folder, type the following command
+
 ``` sh
 touch server.js
 yarn add express
@@ -63,40 +65,28 @@ yarn add express
 `server.js`
 ```js
 const express = require("express");
-
 const path = require("path");
-
 const app = express();
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
 app.get("/api/v1", (req, res) => {
-
-res.json({
-
-project: "React and Express Boilerplate",
-
-from: "Vanaldito",
-
+  res.json({
+    project: "React and Express Boilerplate",
+    from: "Vanaldito",
+  });
 });
 
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
-
-app.get("/*", (_req, res) => {
-
-res.sendFile(path.join(__dirname, "public", "index.html"));
-
-})
 
 const { PORT = 5000 } = process.env;
 
 app.listen(PORT, () => {
-
-console.log();
-
-console.log(` App running in port ${PORT}`);
-
-console.log();
-
-console.log(` > Local: \x1b[36mhttp://localhost:\x1b[1m${PORT}/\x1b[0m`);
+  console.log();
+  console.log(`App running on port ${PORT}`);
+  console.log();
+  console.log(`> Local: \x1b[36mhttp://localhost:\x1b[1m${PORT}/\x1b[0m`);
+});
 ```
