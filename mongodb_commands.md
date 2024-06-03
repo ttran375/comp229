@@ -96,5 +96,7 @@ db.posts.find({ "user": "alice", "commentsCount": { $gt: 10 } })
 ```
 
 An OR query is a bit more complex because it involves the $or operator. 
-To understand it better, take a look at another version of the previous example:
+
+```
 db.posts.find( { $or: [{ "user": "alice" }, { "user": "bob" }] })
+```
