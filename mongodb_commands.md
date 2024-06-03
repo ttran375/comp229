@@ -2,8 +2,15 @@
 
 ## Creating and showing databases
 
-```sh
+To switch to another database called mean by executing the following command: 
+
+```
 use mean
+```
+
+To list all the other databases in the current MongoDB server, just execute the following command:
+
+```
 show dbs
 ```
 
@@ -55,8 +62,16 @@ db.posts.insertOne({"title":"Second Post","user":"alice"})
 
 ## Finding all the collection documents
 
+
+The following query will retrieve all the documents in the posts collection:
+
 ```
 db.posts.find()
+```
+
+Furthermore, performing the same operation can also be done using the following query:
+
+```
 db.posts.find({})
 ```
 
@@ -65,3 +80,21 @@ db.posts.find({})
 ```
 db.posts.find({ "user": "alice" })
 ```
+
+## Build more complex queries
+
+Retrieve all the posts that were created by either alice or bob, you can use the following $in operator:
+
+```
+db.posts.find({ "user": { $in: ["alice", "bob"] } })
+```
+
+To perform an AND query, you simply add the properties you'd like to check to the query object. 
+
+```
+db.posts.find({ "user": "alice", "commentsCount": { $gt: 10 } })
+```
+
+An OR query is a bit more complex because it involves the $or operator. 
+To understand it better, take a look at another version of the previous example:
+db.posts.find( { $or: [{ "user": "alice" }, { "user": "bob" }] })
