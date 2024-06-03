@@ -190,3 +190,11 @@ app.listen(PORT, () => {
 yarn add --dev nodemon
 yarn add global concurrently
 ```
+
+## Running the app
+
+Add the script in the package.json file:
+
+```json
+"dev": "concurrently 'vite' 'nodemon server.js'"
+```
