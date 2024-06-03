@@ -2,7 +2,7 @@
 
 ## Creating and showing databases
 
-To switch to another database called mean by executing the following command: 
+To switch to another database called mean by executing the following command:
 
 ```
 use mean
@@ -18,9 +18,9 @@ show dbs
 
 Insert and retrieve example:
 
-```
-db.posts.insert({"title":"First Post", "user": "bob"})
-db.posts.find()
+```js
+db.posts.insert({ title: "First Post", user: "bob" });
+db.posts.find();
 ```
 
 Show all available collections:
@@ -32,7 +32,7 @@ show collections
 To drop a collection:
 
 ```
-db.posts.drop()
+db.posts.drop();
 ```
 
 ## MongoDB CRUD operations
@@ -44,59 +44,92 @@ db.posts.drop()
 
 ## Creating a document using insert()
 
-```
-db.posts.insert({"title":"Second Post", "user": "alice"})
+``` js
+db.posts.insert({ title: "Second Post", user: "alice" });
 ```
 
 ## Creating a document using update()
 
-```
-db.posts.update({"user":"alice"},{$set:{"title":"Second Post","user":"alice"}},{upsert:true})
+```js
+db.posts.update(
+  { user: "alice" },
+  { $set: { title: "Second Post", user: "alice" } },
+  { upsert: true }
+);
 ```
 
 ## Creating a document using insertOne() or replaceOne()
 
-```
-db.posts.insertOne({"title":"Second Post","user":"alice"})
+```js
+db.posts.insertOne({ title: "Second Post", user: "alice" });
 ```
 
 ## Finding all the collection documents
 
-
 The following query will retrieve all the documents in the posts collection:
 
-```
-db.posts.find()
+```js
+db.posts.find();
 ```
 
 Furthermore, performing the same operation can also be done using the following query:
 
-```
-db.posts.find({})
+```js
+db.posts.find({});
 ```
 
 ## Retrieve a specific document
 
-```
-db.posts.find({ "user": "alice" })
+```js
+db.posts.find({ user: "alice" });
 ```
 
 ## Build more complex queries
 
 Retrieve all the posts that were created by either alice or bob, you can use the following $in operator:
 
-```
-db.posts.find({ "user": { $in: ["alice", "bob"] } })
-```
-
-To perform an AND query, you simply add the properties you'd like to check to the query object. 
-
-```
-db.posts.find({ "user": "alice", "commentsCount": { $gt: 10 } })
+```js
+db.posts.find({ user: { $in: ["alice", "bob"] } });
 ```
 
-An OR query is a bit more complex because it involves the $or operator. 
+To perform an AND query, you simply add the properties you'd like to check to the query object.
 
+```js
+db.posts.find({ user: "alice", commentsCount: { $gt: 10 } });
 ```
-db.posts.find( { $or: [{ "user": "alice" }, { "user": "bob" }] })
+
+An OR query is a bit more complex because it involves the $or operator.
+
+```js
+db.posts.find({ $or: [{ user: "alice" }, { user: "bob" }] });
+```
+
+## Updating existing documents
+
+The update() method takes three arguments to update existing documents
+
+```js
+db.posts.update(
+  {
+    user: "alice",
+  },
+  {
+    $set: {
+      title: "Second Post",
+    },
+  },
+  {
+    multi: true,
+  }
+);
+```
+
+## Updating documents using updateOne()
+
+```js
+db.posts.updateOne(
+  { _id: ObjectId("65b4a6babd5faf31f5b30e3b") },
+  { $set: { title: "Second Post", user: "alice" } },
+  { upsert: true }
+);
 ```
