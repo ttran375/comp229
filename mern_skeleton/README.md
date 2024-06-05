@@ -330,3 +330,33 @@ const config = {
 
 export default config;
 ```
+
+`package.json`
+
+```json
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "global": "^4.4.0"
+  },
+  "scripts": {
+    "dev": "concurrently 'vite' \"nodemon server.js\"",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-loader": "^9.1.3",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.3",
+    "vite": "^5.2.12"
+  },
+  "name": "mern_skeleton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Blessing",
+  "license": "MIT"
+}
+```
