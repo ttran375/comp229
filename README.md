@@ -1,4 +1,4 @@
-# Web Application Development
+****# Web Application Development
 
 ## Week 1
 
@@ -23,4 +23,4 @@
 
 ## Week 5
 
-- In-Class Exercises: [MongoDB Shell](mongodb-shell), [Frontend and Backend Setup](mern_skeleton), MongoDB Atlas
+- In-Class Exercises: [MongoDB Shell](mongodb-shell), [Frontend and Backend Setup](mern_skeleton), [MongoDB Atlas](mongodb-atlast)
