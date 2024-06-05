@@ -280,3 +280,9 @@ Updated index.html file in the root folder is as follows:
   </body>
 </html>
 ```
+
+Run the application since we are running it concurrently it will display the port number where both frontend and backend is running:
+
+``` sh
+yarn dev
+```
