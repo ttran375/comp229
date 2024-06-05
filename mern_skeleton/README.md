@@ -184,14 +184,14 @@ app.listen(PORT, () => {
 });
 ```
 
-## Nodemon and Concurrently
+### Nodemon and Concurrently
 
 ```sh
 yarn add --dev nodemon
 yarn add global concurrently
 ```
 
-## Running the app
+## Running the app#
 
 Add the script in the `client` package.json file:
 
@@ -287,7 +287,7 @@ Run the application since we are running it concurrently it will display the por
 yarn dev
 ```
 
-## Development dependencies
+### Development dependencies
 
 ``` sh
 yarn add --dev @babel/core babel-loader @babel/preset-env
@@ -362,7 +362,7 @@ export default config;
 }
 ```
 
-## Configuring Express
+### Configuring Express
 
 ```sh
 yarn add express
@@ -404,7 +404,7 @@ app.use(cors());
 export default app;
 ```
 
-## Starting the server
+### Starting the server
 
 `server.js`
 
@@ -420,4 +420,25 @@ console.log(err)
 }
 console.info('Server started on port %s.', config.port) 
 })
+```
+
+## Setting up Mongoose and connecting to MongoDB
+
+```sh
+yarn add mongoose
+```
+
+`server.js`
+
+```js
+import mongoose from "mongoose";
+mongoose.Promise = global.Promise;
+mongoose.connect(config.mongoUri, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+});
+mongoose.connection.on("error", () => {
+  throw new Error(`unable to connect to database: ${mongoUri}`);
+});
 ```
