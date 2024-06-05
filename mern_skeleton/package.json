@@ -6,7 +6,8 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "global": "^4.4.0",
-    "helmet": "^7.1.0"
+    "helmet": "^7.1.0",
+    "mongoose": "^8.4.1"
   },
   "scripts": {
     "dev": "concurrently 'vite' \"nodemon server.js\"",
