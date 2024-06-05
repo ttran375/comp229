@@ -1,4 +1,4 @@
-# Configuring The Frontend and Backend Setup Using - Vite
+****# Configuring The Frontend and Backend Setup Using - Vite
 
 ## Creating a new Vite app
 
@@ -263,3 +263,20 @@ yarn add concurrently --dev
 
 Copy the public folder from the client folder and paste in
 the root folder
+
+Updated index.html file in the root folder is as follows:
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="root">Hello World</div>
+  </body>
+</html>
+```
