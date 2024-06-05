@@ -355,8 +355,59 @@ export default config;
   },
   "name": "mern_skeleton",
   "version": "1.0.0",
+  "type":"module",
   "main": "index.js",
   "author": "Blessing",
   "license": "MIT"
 }
+```
+
+## Configuring Express
+
+```sh
+yarn add express
+```
+
+`express.js`
+
+```js
+import express from "express";
+const app = express();
+/*... configure express ... */ 
+export default app;
+```
+
+```sh
+yarn add body-parser
+yarn add cookie-parser
+yarn add compression
+yarn add helmet
+yarn add cors
+```
+
+`express.js`
+
+```js
+import express from "express";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
+import compress from "compression";
+import cors from "cors";
+import helmet from "helmet";
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(compress());
+app.use(helmet());
+app.use(cors());
+export default app;
+```
+
+## Starting the server
+
+`server.js`
+
+```js
+
 ```
