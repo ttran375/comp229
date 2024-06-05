@@ -23,4 +23,4 @@
 
 ## Week 5
 
-- In-Class Exercises: [MongoDB Shell](mongodb-shell), [Frontend and Backend Setup](mern_skeleton)
+- In-Class Exercises: [MongoDB Shell](mongodb-shell), [Frontend and Backend Setup](mern_skeleton), MongoDB Atlas
