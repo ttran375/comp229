@@ -1,4 +1,4 @@
-****# Configuring The Frontend and Backend Setup Using - Vite
+# Configuring The Frontend and Backend Setup Using - Vite
 
 ## Creating a new Vite app
 
