@@ -1,4 +1,4 @@
-****# Web Application Development
+# Web Application Development
 
 ## Week 1
 
