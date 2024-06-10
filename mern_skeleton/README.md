@@ -503,3 +503,9 @@ app.use(helmet());
 app.use(cors());
 export default app;
 ```
+
+### Updated server.js file
+
+```js
+
+```
