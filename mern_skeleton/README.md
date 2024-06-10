@@ -146,6 +146,7 @@ app.use("/src", assetsRouter);
 ```
 
 Updated `server.js`
+
 ```js
 const express = require("express");
 
@@ -191,7 +192,7 @@ yarn add --dev nodemon
 yarn add global concurrently
 ```
 
-## Running the app#
+## Running the app #
 
 Add the script in the `client` package.json file:
 
@@ -208,6 +209,7 @@ yarn add concurrently --dev
 ```
 
 `package.json` in the client
+
 ```json
 {
   "dependencies": {
@@ -233,6 +235,7 @@ yarn add concurrently --dev
 ```
 
 `package.json` in the server
+
 ```json
 {
   "dependencies": {
@@ -296,6 +299,7 @@ yarn add --dev @babel/core babel-loader @babel/preset-env
 Create a file called .babelrc in the mern_skeleton folder as follows:
 
 `.babelrc`
+
 ``` json
 {
   "presets": [
@@ -477,7 +481,7 @@ export default () => {
 };
 ```
 
-### Updated express.js file.
+### Updated express.js file
 
 ```js
 import express from "express";
@@ -531,6 +535,52 @@ app.listen(config.port, (err) => {
 
 ```
 
-### User.model.js file.
+### Updated user.model.js
 
+```js
+import mongoose from "mongoose";
+const UserSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    trim: true,
+    required: "Name is required",
+  },
+  email: {
+    type: String,
+    trim: true,
+    unique: "Email already exists",
+    match: [/.+\@.+\..+/, "Please fill a valid email    address"],
+    required: "Email is required",
+  },
+  created: {
+    type: Date,
+    default: Date.now,
+  },
+  updated: Date,
+  hashed_password: {
+    type: String,
+    required: "Password is required",
+  },
+  salt: String,
+});
+UserSchema.virtual("password")
+  .set(function (password) {
+    this._password = password;
+    this.salt = this.makeSalt();
+    this.hashed_password = this.encryptPassword(password);
+  })
+  .get(function () {
+    return this._password;
+  });
 
+UserSchema.path("hashed_password").validate(function (v) {
+  if (this._password && this._password.length < 6) {
+    this.invalidate("password", "Password must be at least 6 characters.");
+  }
+  if (this.isNew && !this._password) {
+    this.invalidate("password", "Password is required");
+  }
+}, null);
+
+export default mongoose.model("User", UserSchema);
+```
