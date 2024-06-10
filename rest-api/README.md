@@ -1,4 +1,4 @@
-# REST API
+****# REST API
 
 ## Adding user CRUD APIs
 
@@ -123,4 +123,22 @@ const remove = async (req, res) => {
   }
 };
 export default { create, userByID, read, list, remove, update };
+```
+
+`error.controller.js`
+
+```js
+function handleError(req, res) {
+  // Your code to handle the error
+}
+
+function getErrorMessage(errMsg) {
+  console.log(errMsg);
+}
+
+// Export the controller function
+export default {
+  handleError: handleError,
+  getErrorMessage: getErrorMessage,
+};
 ```
