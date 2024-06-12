@@ -23,7 +23,9 @@
         "vinliao.fast-arrow",
         "dsznajder.es7-react-js-snippets",
         "yzhang.markdown-all-in-one",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "Postman.postman-for-vscode",
+        "GitHub.copilot"
       ]
     }
   }
