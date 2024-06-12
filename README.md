@@ -27,4 +27,4 @@
 
 ## Week 6
 
-- In-Class Exercises: [REST API, Testing REST API](rest-api)
+- In-Class Exercises: [REST API](rest-api), [Testing REST API](testing-rest-api)

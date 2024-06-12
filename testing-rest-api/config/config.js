@@ -7,9 +7,9 @@ const config = {
     "mongodb+srv://BLESSING:Ilunamie12@cluster0.9xvroez.mongodb.net/Skeleton?retryWrites=true&w=majority&appName=Cluster0" ||
     process.env.MONGO_HOST ||
     "mongodb://" +
-      (process.env.IP || "localhost") +
-      ":" +
-      (process.env.MONGO_PORT || "27017") +
-      "/mernproject",
+    (process.env.IP || "localhost") +
+    ":" +
+    (process.env.MONGO_PORT || "27017") +
+    "/mernproject",
 };
 export default config;
