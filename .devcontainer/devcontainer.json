@@ -25,7 +25,8 @@
         "yzhang.markdown-all-in-one",
         "DavidAnson.vscode-markdownlint",
         "Postman.postman-for-vscode",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "rangav.vscode-thunder-client"
       ]
     }
   }
