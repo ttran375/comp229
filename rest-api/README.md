@@ -1,4 +1,4 @@
-****# REST API
+\*\*\*\*# REST API
 
 ## Adding user CRUD APIs
 
@@ -28,14 +28,14 @@ import compress from "compression";
 import cors from "cors";
 import helmet from "helmet";
 import Template from "./../template.js";
-import userRoutes from './routes/user.routes.js'
+import userRoutes from "./routes/user.routes.js";
 
 const app = express();
 app.get("/", (req, res) => {
   res.status(200).send(Template());
 });
 
-app.use('/', userRoutes)
+app.use("/", userRoutes);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -142,3 +142,94 @@ export default {
   getErrorMessage: getErrorMessage,
 };
 ```
+
+`user.model.js`
+
+```js
+import mongoose from "mongoose";
+//const mongoose = require('mongoose');
+const UserSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    trim: true,
+    required: "Name is required",
+  },
+  email: {
+    type: String,
+    trim: true,
+    unique: "Email already exists",
+    match: [/.+\@.+\..+/, "Please fill a valid email address"],
+    required: "Email is required",
+  },
+  created: {
+    type: Date,
+    default: Date.now,
+  },
+  updated: {
+    type: Date,
+    default: Date.now,
+  },
+  hashed_password: {
+    type: String,
+    required: "Password is required",
+  },
+  salt: String,
+});
+UserSchema.virtual("password")
+  .set(function (password) {
+    this._password = password;
+    //this.salt = this.makeSalt();
+    this.hashed_password = password;
+    //this.hashed_password = this.encryptPassword(password);
+  })
+  .get(function () {
+    return this._password;
+  });
+UserSchema.path("hashed_password").validate(function (v) {
+  if (this._password && this._password.length < 6) {
+    this.invalidate("password", "Password must be at least 6 characters.");
+  }
+  if (this.isNew && !this._password) {
+    this.invalidate("password", "Password is required");
+  }
+}, null);
+//module.exports = mongoose.model('User', UserSchema);
+export default mongoose.model("User", UserSchema);
+```
+
+`express.js`
+
+```js
+import express from "express";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
+import compress from "compression";
+import cors from "cors";
+import helmet from "helmet";
+import Template from "./../template.js";
+import userRoutes from "./routes/user.routes.js";
+
+const app = express();
+app.get("/", (req, res) => {
+  res.status(200).send(Template());
+});
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use("/", userRoutes);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(compress());
+app.use(helmet());
+app.use(cors());
+export default app;
+```
+
+```sh
+yarn add method-override
+```
+
+cd client
+yarn dev to run the application
