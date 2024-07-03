@@ -33,3 +33,7 @@
 
 - In-Class Exercises: [RESTful API](https://github.com/ttran375/api)
 - Assignments: Online Market Application
+
+## Week 9
+
+- In-Class Exercises: [Authentication](https://github.com/ttran375/authentication)
