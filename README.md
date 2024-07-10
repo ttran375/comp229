@@ -36,4 +36,4 @@
 
 ## Week 9
 
-- In-Class Exercises: [Authentication](https://github.com/ttran375/authentication)
+- In-Class Exercises: [Authentication](https://github.com/ttran375/authentication), MERN
