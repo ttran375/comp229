@@ -32,7 +32,7 @@
 ## Week 7
 
 - In-Class Exercises: [RESTful API](https://github.com/ttran375/api)
-- Assignments: Online Market Application
+- Assignments: [Online Market Application](https://github.com/ttran375/comp229-assignment2)
 
 ## Week 9
 
