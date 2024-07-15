@@ -44,4 +44,4 @@
 
 ## Week 11
 
-- In-Class Exercises: MERN Authentication, MERN Deployment
+- In-Class Exercises: [MERN Authentication](https://github.com/ttran375/mern-auth), MERN Deployment
