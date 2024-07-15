@@ -36,4 +36,12 @@
 
 ## Week 9
 
-- In-Class Exercises: [Authentication](https://github.com/ttran375/authentication), [MERN](https://github.com/ttran375/mern)
+- In-Class Exercises: [Authentication](https://github.com/ttran375/authentication)
+
+## Week 10
+
+- In-Class Exercises: [MERN](https://github.com/ttran375/mern)
+
+## Week 11
+
+- In-Class Exercises: [MERN Authentication](https://github.com/ttran375/mern-auth), MERN Deployment
