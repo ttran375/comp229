@@ -25,20 +25,20 @@
 
 - In-Class Exercises: [MongoDB Shell](mongodb-shell), [Frontend and Backend Setup](mern_skeleton)
 
-## WEEK 7: Review and Tes
+## WEEK 7: Review and Test
 
 - In-Class Exercises: [REST API](rest-api), [Testing REST API](https://github.com/ttran375/testing-rest-api)
 
-## Week 7
+## WEEK 8: Constructing the Interactive UI
 
 - In-Class Exercises: [RESTful API](https://github.com/ttran375/api)
 - Assignments: [Online Market Application](https://github.com/ttran375/comp229-assignment2)
 
-## Week 9
+## WEEK 9: Developing a Full-Stack Authentication Systems and Login Forms
 
 - In-Class Exercises: [Authentication](https://github.com/ttran375/authentication)
 
-## Week 10
+## WEEK 10: Testing and Deploying a Full-Stack App
 
 - In-Class Exercises: [MERN](https://github.com/ttran375/mern)
 
