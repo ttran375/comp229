@@ -41,4 +41,4 @@
 
 ## WEEK 10: Testing and Deploying a Full-Stack App
 
-- In-Class Exercises: Sellers Activity, Shops, Products
+- In-Class Exercises: [Sellers Activity](https://github.com/ttran375/sellers-activity), Shops, Products
