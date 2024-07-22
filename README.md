@@ -40,3 +40,5 @@
 - In-Class Exercises: [MERN](https://github.com/ttran375/mern), [MERN Authentication](https://github.com/ttran375/mern-auth)
 
 ## WEEK 10: Testing and Deploying a Full-Stack App
+
+- In-Class Exercises: 
