@@ -28,6 +28,7 @@
 ## WEEK 7: Review and Test
 
 - In-Class Exercises: [Testing REST API](https://github.com/ttran375/testing-rest-api)
+- Tests: [MIDTERM TEST](https://github.com/ttran375/comp229-test1)
 
 ## WEEK 8: Constructing the Interactive UI
 
@@ -36,12 +37,6 @@
 
 ## WEEK 9: Developing a Full-Stack Authentication Systems and Login Forms
 
-- In-Class Exercises: [Authentication](https://github.com/ttran375/authentication)
+- In-Class Exercises: [MERN](https://github.com/ttran375/mern), [MERN Authentication](https://github.com/ttran375/mern-auth)
 
 ## WEEK 10: Testing and Deploying a Full-Stack App
-
-- In-Class Exercises: [MERN](https://github.com/ttran375/mern)
-
-## Week 11
-
-- In-Class Exercises: [MERN Authentication](https://github.com/ttran375/mern-auth), MERN Deployment
