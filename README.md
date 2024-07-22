@@ -1,31 +1,31 @@
 # Web Application Development
 
-## Week 1
+## WEEK 1: Introduction to Modern Web App Development
 
 - In-Class Exercises: [Development Environment](development-envrironment)
 
-## Week 2
+## WEEK 2: React-Introduction to Front-End Development
 
 - In-Class Exercises: [React via CDN](react-via-cdn), [How React Works](how-react-works)
 
-## Week 3
+## WEEK 3 Contd: Introduction to Web Server Frameworks
 
 - In-Class Exercises: [Node.js](nodejs)
 
-## Week 4
+## WEEK 4: Building a REST API with Express
 
 - In-Class Exercises: [Express.js](expressjs)
 
-## Week 5
+## WEEK 5: Building a REST API with Express
 
 - In-Class Exercises: [MERN Stack](mern-stack)
 - Assignments: [Portfolio](https://github.com/ttran375/comp229-assignment1)
 
-## Week 5
+## WEEK 6: Implementing Authentication
 
 - In-Class Exercises: [MongoDB Shell](mongodb-shell), [Frontend and Backend Setup](mern_skeleton)
 
-## Week 6
+## WEEK 7: Review and Tes
 
 - In-Class Exercises: [REST API](rest-api), [Testing REST API](https://github.com/ttran375/testing-rest-api)
 
