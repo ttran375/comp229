@@ -41,4 +41,4 @@
 
 ## WEEK 10: Testing and Deploying a Full-Stack App
 
-- In-Class Exercises: 
+- In-Class Exercises: User Activity, 
