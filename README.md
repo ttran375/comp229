@@ -31,7 +31,7 @@
 
 ## WEEK 8: Constructing the Interactive UI
 
-- In-Class Exercises: [RESTful API](https://github.com/ttran375/api)
+- In-Class Exercises: [RESTful API](https://github.com/ttran375/api), [React Forms](https://github.com/ttran375/react-forms)
 - Assignments: [Online Market Application](https://github.com/ttran375/comp229-assignment2)
 
 ## WEEK 9: Developing a Full-Stack Authentication Systems and Login Forms
