@@ -37,8 +37,8 @@
 
 ## WEEK 9: Developing a Full-Stack Authentication Systems and Login Forms
 
-- In-Class Exercises: [MERN](https://github.com/ttran375/mern), [MERN Authentication](https://github.com/ttran375/mern-auth)
+- In-Class Exercises: [MERN](https://github.com/ttran375/mern), [Navbar](https://github.com/ttran375/mern-auth)
 
 ## WEEK 10: Testing and Deploying a Full-Stack App
 
-- In-Class Exercises: User Activity, 
+- In-Class Exercises: Sellers Activity, Shops, Products
