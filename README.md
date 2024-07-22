@@ -27,7 +27,7 @@
 
 ## WEEK 7: Review and Test
 
-- In-Class Exercises: [REST API](rest-api), [Testing REST API](https://github.com/ttran375/testing-rest-api)
+- In-Class Exercises: [Testing REST API](https://github.com/ttran375/testing-rest-api)
 
 ## WEEK 8: Constructing the Interactive UI
 
