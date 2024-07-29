@@ -45,4 +45,4 @@
 
 ## WEEK 11: Authentication Revised: Authentication Providers, Firebase and 2FA
 
-- In-Class Exercises: [How to Connect Your React App to Firebase](https://github.com/ttran375/comp229-firebase), [Authenticating Users With Firebase & React](https://github.com/ttran375/comp229-react-auth-firebase)
+- In-Class Exercises: How to Connect Your React App to Firebase, [Authenticating Users With Firebase & React](https://github.com/ttran375/comp229-react-auth-firebase)
