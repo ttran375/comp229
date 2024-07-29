@@ -42,3 +42,7 @@
 ## WEEK 10: Testing and Deploying a Full-Stack App
 
 - In-Class Exercises: [Sellers Activity](https://github.com/ttran375/sellers-activity), [Shops](https://github.com/ttran375/comp229-shops), [Products](https://github.com/ttran375/comp229-products), [Deployment](https://github.com/ttran375/comp229-products-deployment)
+
+## WEEK 11: Authentication Revised: Authentication Providers, Firebase and 2FA
+
+- In-Class Exercises: [How to Connect Your React App to Firebase](https://github.com/ttran375/comp229-firebase), [Authenticating Users With Firebase & React](https://github.com/ttran375/comp229-react-auth-firebase)
