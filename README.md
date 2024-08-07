@@ -47,3 +47,6 @@
 
 - In-Class Exercises: [How to Connect Your React App to Firebase](https://github.com/ttran375/comp229-firebase), [Authenticating Users With Firebase & React](https://github.com/ttran375/comp229-react-auth-firebase), [How to Connect Your React App to Firebase using Vite](https://github.com/ttran375/comp229-firebase-vite)
 
+## WEEK 12: Real-Time Applications with WebSockets and Exploring Serverless Architecture
+
+- In-Class Exercises: [WebSocket](https://github.com/ttran375/comp229-websocket)
